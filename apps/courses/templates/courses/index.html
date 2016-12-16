@@ -36,8 +36,8 @@
             <td>{{course.name}}</td>
             <td>{{course.description.text}}</td>
             <td>{{course.created_at}}</td>
-            <td><a href="/confirmdelete/{{course.id}}">Remove</a></td>
-            <td><a href="/viewcomments/{{course.id}}">View comments</a></td>
+            <td><a href="/confirmdelete/{{course.id}}/">Remove</a></td>
+            <td><a href="/courses/viewcomments/{{course.id}}/">View comments</a></td>
 
           </tr>
           {% endfor %}

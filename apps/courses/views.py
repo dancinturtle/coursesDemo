@@ -41,4 +41,4 @@ def createcomment(request):
     courseid=request.POST['id']
     course = Course.objects.get(id = courseid)
     comment = Comment.objects.create(name = request.POST['name'], comment = request.POST['comment'], course = course)
-    return redirect('/viewcomments/{}'.format(courseid))
+    return redirect('courses/viewcomments/{}'.format(courseid))
